@@ -5,7 +5,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 // localstorage
 import storage from './Storage';
 
-const branches = ['DurbarMarg', "kumaripati", "Baneshwor"]
+const branches = ['Durbarmarg', "kumaripati", "Baneshwor"]
 
 const BranchSelectorModal = ({selectbranch,setSelectBranch}) => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -26,7 +26,7 @@ const BranchSelectorModal = ({selectbranch,setSelectBranch}) => {
       })
       .then(ret => {
         // success
-        console.log(ret)
+        // console.log(ret)
         setSelectBranch(ret)
       })
       .catch(err => {
